@@ -1,0 +1,206 @@
+[
+	{
+		"id": 1,
+		"name": "Team Alpha",
+		"playerCount": 5,
+		"region": "North",
+		"country": "Country A",
+		"players": [
+			"John Smith",
+			"Mary Johnson",
+			"Michael Brown",
+			"Lisa Williams",
+			"David Miller"
+		]
+	},
+	{
+		"id": 2,
+		"name": "Team Bravo",
+		"playerCount": 4,
+		"region": "South",
+		"country": "Country B",
+		"players": [
+			"Jennifer Davis",
+			"William Jones",
+			"Patricia Martinez",
+			"Charles Anderson"
+		]
+	},
+	{
+		"id": 3,
+		"name": "Team Charlie",
+		"playerCount": 6,
+		"region": "East",
+		"country": "Country C",
+		"players": [
+			"Elizabeth Thomas",
+			"Richard Taylor",
+			"Susan Garcia",
+			"Matthew Lee",
+			"Karen Hernandez",
+			"Joshua Wilson"
+		]
+	},
+	{
+		"id": 4,
+		"name": "Team Delta",
+		"playerCount": 3,
+		"region": "West",
+		"country": "Country D",
+		"players": ["Daniel White", "Linda Allen", "James Baker"]
+	},
+	{
+		"id": 5,
+		"name": "Team Echo",
+		"playerCount": 7,
+		"region": "Central",
+		"country": "Country E",
+		"players": [
+			"Maria Scott",
+			"Mark Perez",
+			"Sarah Nelson",
+			"Steven Carter",
+			"Laura Mitchell",
+			"Kevin Evans",
+			"Amanda Rivera"
+		]
+	},
+	{
+		"id": 6,
+		"name": "Team Foxtrot",
+		"playerCount": 5,
+		"region": "South",
+		"country": "Country F",
+		"players": [
+			"George Richardson",
+			"Karen Turner",
+			"Anthony Cook",
+			"Michelle Cooper",
+			"Thomas Ward"
+		]
+	},
+	{
+		"id": 7,
+		"name": "Team Golf",
+		"playerCount": 4,
+		"region": "North",
+		"country": "Country G",
+		"players": [
+			"Dorothy Bailey",
+			"Charles Simmons",
+			"Jessica Foster",
+			"Joseph Reed"
+		]
+	},
+	{
+		"id": 8,
+		"name": "Team Hotel",
+		"playerCount": 6,
+		"region": "East",
+		"country": "Country H",
+		"players": [
+			"William Hayes",
+			"Emily Butler",
+			"Richard Griffin",
+			"Cynthia Gibson",
+			"Ryan Wallace",
+			"Carol Diaz"
+		]
+	},
+	{
+		"id": 9,
+		"name": "Team India",
+		"playerCount": 4,
+		"region": "South",
+		"country": "Country I",
+		"players": [
+			"Jennifer Murphy",
+			"Edward Collins",
+			"Barbara Bell",
+			"Ronald Green"
+		]
+	},
+	{
+		"id": 10,
+		"name": "Team Juliet",
+		"playerCount": 5,
+		"region": "North",
+		"country": "Country J",
+		"players": [
+			"Helen Edwards",
+			"Andrew Martinez",
+			"Margaret Kelly",
+			"Jason Rivera",
+			"Betty Richardson"
+		]
+	},
+	{
+		"id": 11,
+		"name": "Team Kilo",
+		"playerCount": 3,
+		"region": "West",
+		"country": "Country K",
+		"players": ["Frank Baker", "Sharon Bell", "Gary Lewis"]
+	},
+	{
+		"id": 12,
+		"name": "Team Lima",
+		"playerCount": 6,
+		"region": "Central",
+		"country": "Country L",
+		"players": [
+			"Sandra Martinez",
+			"Chris Allen",
+			"Nancy Turner",
+			"Donald Nelson",
+			"Pamela Griffin",
+			"Jeffrey Scott"
+		]
+	},
+	{
+		"id": 13,
+		"name": "Team Mike",
+		"playerCount": 4,
+		"region": "North",
+		"country": "Country M",
+		"players": ["Frances Murphy", "Albert Davis", "Judith White", "Harold Cook"]
+	},
+	{
+		"id": 14,
+		"name": "Team November",
+		"playerCount": 5,
+		"region": "South",
+		"country": "Country N",
+		"players": [
+			"Dorothy Miller",
+			"Gregory Wilson",
+			"Gloria Martinez",
+			"Patrick Thompson",
+			"Deborah Carter"
+		]
+	},
+	{
+		"id": 15,
+		"name": "Team Oscar",
+		"playerCount": 3,
+		"region": "East",
+		"country": "Country O",
+		"players": ["Victor Hall", "Janet Adams", "Ruth Green"]
+	},
+	{
+		"id": 16,
+		"name": "Team Papa",
+		"playerCount": 7,
+		"region": "Central",
+		"country": "Country P",
+		"players": [
+			"Scott Carter",
+			"Teresa Diaz",
+			"Walter Brown",
+			"Alice Turner",
+			"Jeffrey Harris",
+			"Amy Richardson",
+			"Kevin Mitchell"
+		]
+	}
+]
