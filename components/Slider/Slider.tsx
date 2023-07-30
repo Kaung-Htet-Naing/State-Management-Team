@@ -8,6 +8,7 @@ type SliderProps = {
 	open: boolean;
 	setOpen: React.Dispatch<React.SetStateAction<boolean>>;
 	team?: TeamType;
+	teams: TeamType[];
 	handleCreateNewTeam?: (newTeam: TeamType) => void;
 	handleUpdateTeam?: (newTeam: TeamType) => void;
 	type: "create" | "update";
@@ -20,6 +21,7 @@ const Slider = ({
 	team,
 	handleUpdateTeam,
 	type,
+	teams,
 }: SliderProps) => {
 	const [name, setName] = useState<string>("");
 	const [playerCount, setPlayerCount] = useState<number>(0);

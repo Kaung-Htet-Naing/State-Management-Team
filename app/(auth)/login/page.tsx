@@ -11,11 +11,12 @@ export default function Home() {
 
 	const router = useRouter();
 
+	console.log(router);
 	const handleSubmit = (event: FormEvent) => {
 		event.preventDefault();
 		if (value.length >= 0) {
 			setUserName(value);
-			fetch("http://localhost:3000/api/login", {
+			fetch(`/api/login`, {
 				method: "POST",
 			})
 				.then(() => {

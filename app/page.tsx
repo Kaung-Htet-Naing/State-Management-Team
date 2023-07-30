@@ -45,7 +45,7 @@ export default function Home() {
 	}, [page]);
 
 	const handleLogout = () => {
-		fetch("http://localhost:3000/api/logout", {
+		fetch("/api/logout", {
 			method: "POST",
 		})
 			.then(() => router.push("/login"))

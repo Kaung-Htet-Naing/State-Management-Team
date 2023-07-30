@@ -52,12 +52,14 @@ const TeamsTable = ({ teams, setTeams }: PlayerTableProps) => {
 				open={createSlide}
 				setOpen={setCreateSlide}
 				handleCreateNewTeam={handleCreateNewTeam}
+				teams={teams}
 				type="create"
 			/>
 			<Slider
 				open={updateSlide}
 				setOpen={setUpdateSlide}
 				team={team}
+				teams={teams}
 				handleUpdateTeam={handleUpdateTeam}
 				type="update"
 			/>
