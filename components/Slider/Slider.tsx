@@ -32,6 +32,7 @@ const Slider = ({
 	const [nameError, setNameError] = useState<string>("");
 	const [regionError, setRegionError] = useState<string>("");
 	const [countryError, setCountryError] = useState<string>("");
+	const [playerError, setPlayerError] = useState<string>("");
 
 	useEffect(() => {
 		if (type == "update" && team) {
@@ -44,11 +45,22 @@ const Slider = ({
 	}, [team]);
 
 	const checkValidation = () => {
-		if (name.length <= 0) setNameError("Type Name");
-		if (region.length <= 0) setRegionError("Type Region");
-		if (country.length <= 0) setCountryError("Type Country");
-		if (name.length > 0 && region.length > 0 && country.length > 0) return true;
-		else return false;
+		const isUniqueName = teams.some((team) => team.name === name);
+		if (name.length <= 0) {
+			setNameError("Type Name");
+		} else setNameError("");
+		if (isUniqueName) {
+			setNameError("Already exists");
+		}
+		if (region.length <= 0) {
+			setRegionError("Type Region");
+		} else setRegionError("");
+		if (country.length <= 0) {
+			setCountryError("Type Country");
+		} else setCountryError("");
+		const isValidInput =
+			name.length > 0 && region.length > 0 && country.length > 0;
+		return isValidInput && !isUniqueName;
 	};
 
 	const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
@@ -79,11 +91,6 @@ const Slider = ({
 				};
 				if (handleUpdateTeam) handleUpdateTeam(updateTeam);
 			}
-			setName("");
-			setPlayerCount(0);
-			setRegion("");
-			setCountry("");
-			setPlayers([]);
 			setNameError("");
 			setRegionError("");
 			setCountryError("");
@@ -97,10 +104,22 @@ const Slider = ({
 	};
 
 	const handleAddPlayer = () => {
-		setPlayers((prevPlayers) => {
-			return [...prevPlayers, player];
-		});
-		setPlayer("");
+		const playerExists = teams.some((team) => team.players.includes(player));
+		const playerExistsInSameTeam = players.includes(player);
+		console.log("playerExists", playerExists);
+		console.log("playerExistsInSameTeam", playerExistsInSameTeam);
+		if (player.length > 0) {
+			if (playerExists || playerExistsInSameTeam) {
+				setPlayerError("Duplicate players found");
+				return;
+			} else {
+				setPlayers((prevPlayers) => {
+					return [...prevPlayers, player];
+				});
+				setPlayer("");
+				setPlayerError("");
+			}
+		}
 	};
 
 	return (
@@ -234,11 +253,13 @@ const Slider = ({
 											<PlusCircleIcon className="w-8 h-8" />
 										</div>
 									</div>
+									{playerError.length > 0 && (
+										<p className="m-1 text-sm text-red-900">{playerError}</p>
+									)}
 								</div>
 							</label>
 						</div>
 					</div>
-
 					<div className="flex justify-end gap-3 px-5">
 						<button
 							onClick={() => {
